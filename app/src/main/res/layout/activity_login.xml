@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yoga"
+    android:orientation="vertical"
+    >
+
+
+<ImageView
+android:id="@+id/logo"
+android:layout_width="wrap_content"
+android:layout_height="200dp"
+android:layout_centerHorizontal="true"
+android:scaleType="centerCrop"
+android:src="@drawable/logo" />
+
+<TextView
+android:id="@+id/textView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@+id/logo"
+android:fontFamily="monospace"
+android:layout_centerHorizontal="true"
+android:text="RELAX MEDITATE CALMNESS"
+android:textColor="#0088ff"
+android:textSize="25dp"
+android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0088ff"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:hint="Email Id"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:layout_width="373dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#ffffffff" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rndbtn"
+            android:text="LOG IN" />
+
+    </LinearLayout>
+</RelativeLayout>
